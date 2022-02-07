@@ -45,6 +45,7 @@ pipeline {
                     terraform workspace select ${NAME_TF_WORKSPACE} || terraform workspace new ${NAME_TF_WORKSPACE} #Will execute second command if first fails
                     terraform workspace show
                     terraform workspace list
+                    terraform force-unlock 1644249402768463
                     '''
                 }
             }
