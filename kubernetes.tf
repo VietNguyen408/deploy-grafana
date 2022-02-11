@@ -1,7 +1,7 @@
 provider "google" {
   project      = "syndeno"
   region       = var.region
-  #access_token = var.access_token
+  access_token = var.access_token
 }
 
 data "google_client_config" "provider" {}
